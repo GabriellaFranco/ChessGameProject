@@ -7,7 +7,9 @@ import java.util.stream.Collectors;
 import board.Board;
 import board.Piece;
 import board.Position;
+import chess.pieces.Bishop;
 import chess.pieces.King;
+import chess.pieces.Pawn;
 import chess.pieces.Rook;
 
 public class ChessMatch {
@@ -61,6 +63,7 @@ public class ChessMatch {
 	}
 
 	private void initialSetup() {
+		
 		placeNewPiece('a', 1, new Rook(board, Color.WHITE));
 		placeNewPiece('b', 1, new Knight(board, Color.WHITE));
 		placeNewPiece('c', 1, new Bishop(board, Color.WHITE));
